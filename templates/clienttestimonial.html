@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+	
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="STEPS | Multipurpose Working Wizard with Branches">
+    <meta name="author" content="Ansonika">
+    <title>STEPS | Multipurpose Working Wizard with Branches</title>
+    
+    <!-- Favicons-->
+    
+    <link rel="shortcut icon" href="{% static 'img/logoasc.png' %}" type="image/x-icon">
+    <link rel="icon"  href="{% static 'img/logooo.png' %}"type="image/x-icon">
+    <link rel="icon" type="image/x-icon" sizes="72x72" href="{% static 'img/logoasc.png' %}">
+    <link rel="icon" type="image/x-icon" sizes="114x114" href="{% static 'img/logoasc.png' %}">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="{% static 'img/logoasc.png' %}">
+    
+    <!-- GOOGLE WEB FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- BASE CSS -->
+    <link  href="{% static 'css\bootstrap.min.css' %}" rel="stylesheet">
+    <link  href="{% static 'css\style.css' %}" rel="stylesheet">
+    <link  href="{% static 'css\menu.css' %}" rel="stylesheet">
+    <link  href="{% static 'css\vendors.css' %}" rel="stylesheet">
+    <link  href="{% static 'css\icon_fonts/css/all_icons.min.css' %}" rel="stylesheet">
+    <link  href="{% static 'css\skins/square/grey.css' %}" rel="stylesheet">
+    
+     <!-- YOUR CUSTOM CSS -->
+    <link href="{% static 'css\custom.css' %}" rel="stylesheet">
+    <script src="{% static 'js\modernizr.js' %}" rel="stylesheet"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#testimonial-slider").owlCarousel({
+            items:1,
+            itemsDesktop:[1000,1],
+            itemsDesktopSmall:[979,1],
+            itemsTablet:[768,1],
+            pagination:true,
+            navigation:false,
+            navigationText:["",""],
+            slideSpeed:1000,
+            singleItem:true,
+            autoPlay:true
+        });
+    });
+</script>
+<style>
+    h3{
+            margin: 0;
+        }
+        a:hover, a:focus{
+            text-decoration: none;
+        }
+        .testimonial{
+            background: #4D241C ;
+            padding: 30px 32px 30px 90px;
+            margin: 50px 20px 50px 120px;
+            border-radius: 0 100px 100px 0;
+            color: #fff;
+            position: relative;
+            border: 5px solid #D0AB6D;
+        }
+        .testimonial .pic{
+            width: 210px;
+            height: 210px;
+            line-height: 200px;
+            border-radius: 50%;
+            border: 14px solid #D0AB6D;
+            position: absolute;
+            top: -15px;
+            left: -120px;
+            overflow: hidden;
+        }
+        .testimonial .pic img{
+            width: 100%;
+            height: 100%;
+        }
+        .testimonial .testimonial-info{
+            display: inline-block;
+            width: 35%;
+            float: left;
+            font-size: 20px;
+            font-weight: 700;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            padding: 28px 25px;
+            margin: 0;
+            border-right: 1px solid #D0AB6D;
+        }
+        .testimonial .testimonial-info small{
+            display: block;
+            font-size: 12px;
+            color: #fff;
+            margin-top: 5px;
+        }
+        .testimonial .description{
+            display: inline-block;
+            width: 65%;
+            font-size: 15px;
+            color: #fff;
+            letter-spacing: 0.5px;
+            margin-bottom: 0;
+            padding: 28px 0 28px 28px;
+            position: relative;
+        }
+        .testimonial .description:before{
+            content: "\f10d";
+            font-family: fontawesome;
+            position: absolute;
+            top: 0;
+            left: 10px;
+            font-size: 20px;
+            color: #D0AB6D;
+        }
+        .testimonial .description:after{
+            content: "\f10e";
+            font-family: fontawesome;
+            font-size: 20px;
+            color: #D0AB6D;
+            position: absolute;
+            bottom: 5px;
+        }
+        .owl-theme .owl-controls .owl-page.active span,
+        .owl-theme .owl-controls .owl-page span{
+            width: 25px !important;
+            height: 7px !important;
+            background: #4D241C !important;
+            box-sizing: content-box;
+        }
+        .owl-theme .owl-controls .owl-page span{
+            border: 4px solid transparent;
+            background: #D0AB6D !important;
+        }
+        @media only screen and (max-width: 767px){
+            .testimonial{
+                border-radius: 40px;
+                margin: 90px 15px 0;
+                padding: 100px 40px 30px 40px;
+            }
+            .testimonial .pic{
+                position: absolute;
+                top: -85px;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+            }
+            .testimonial .testimonial-info{
+                width: 100%;
+                float: none;
+                border-right: none;
+                text-align: center;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+            }
+            .testimonial .description{
+                width: 100%;
+            }
+        }
+        @media only screen and (max-width: 480px){
+            .testimonial{ padding: 100px 30px 30px; }
+        }
+       
+</style>
+
+ 
+    <link rel="stylesheet" type="text/css" href="{% static 'css/form.css' %}">
+    <!-- Modernizr -->
+    
+    
+    </head>
+<body>
+  {% include "header.html"%}
+  <main>
+    <div class="doodle">
+      {%include "doodle.html"%}
+        </div>
+         <div class="question_title">
+           <h1>Client Testimonials</h1>
+        </div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-offset-2 col-md-8">
+            <div id="testimonial-slider" class="owl-carousel">
+                <div class="testimonial">
+                    <div class="pic">
+                        <img src="https://static.pexels.com/photos/529928/pexels-photo-529928.jpeg" alt="" class="img-responsive">
+                    </div>
+                    <h3 class="testimonial-info">
+                     Sandeep Patel
+                        <small>Director - ESPI VISA CONSULTANTS PVT LTD</small>
+                    </h3>
+                    <p class="description">I have given my LMS work to Anant soft Computing . Anant Soft Computing team had given nice support to us . The founder Jigar Desai is personally involved in every project and also giving nice suggestion in each and every small part  like Logo, colour, font , architect of system, design etc</p>
+                </div>
+
+                <div class="testimonial">
+                    <div class="pic">
+                        <img src="http://www.markharwood.plus.com/images/people%20large/people8.jpg" alt="" class="img-responsive">
+                    </div>
+                    <h3 class="testimonial-info">
+                        Jimish Sura
+                        <small>Director- Conart Engineers Ltd</small>
+                    </h3>
+                    <p class="description">	Anant Soft assisted with analysis of requirements, technology feasibility, design and development of various IT projects implemented in Conart.  Their team was able is knowledgeable on various aspects of IT tools available, focused, and are able to deliver multiple projects successfully on time.</p>
+                </div>
+                <div class="testimonial">
+                    <div class="pic">
+                        <img src="http://www.markharwood.plus.com/images/people%20large/people8.jpg" alt="" class="img-responsive">
+                    </div>
+                    <h3 class="testimonial-info">
+                         Hardik Ray
+                        <small>Director - Calibray Business Solutions</small>
+                    </h3>
+                    <p class="description">	Super quick in development, technical knowledge of core team is excellent, cloud-base ERP, web development and custom software solutions are their key specialisation. We developed ERP and CRM their work is beyond our expectations.</p>
+                </div>
+                <div class="testimonial">
+                    <div class="pic">
+                        <img src="http://www.markharwood.plus.com/images/people%20large/people8.jpg" alt="" class="img-responsive">
+                    </div>
+                    <h3 class="testimonial-info">
+                         Poojan shah
+                        <small>Owner-SP Mortgages Pvt. Ltd.</small>
+                    </h3>
+                    <p class="description">	I have engaged Anant soft Computing for revamping our existing website and to design a unique dashboard for our clients use and their team have done a great work pulling everything together in a timely manner. Also, I have felt overall service and communication to satisfactory level especially when I am dealing from Australia. Ther team is great and supportive to understand the business need and requirement. I would deffinately recommend.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</main>   
+  
+      
+<footer>
+      <div>
+       <div class="row" >
+           <div class="col-lg-3" style="padding-left:70px;">
+              <div class="box_contact">
+                    <i class="pe-7s-map-marker" ></i>
+                   <h6 style="font-size:14px;line-height:1.2;color:#333;font-weight:700!important;" >Address</h6>
+                    <p>1C Satyam Apartment,
+                    Vishwas Colony, Alkapuri,
+                    Vadodara, Gujarat 390005</p>
+                    <form action="https://www.google.com/maps/dir/22.2794605,73.1469354/Satyam+Apartment,+1C,+Vishwas+Colony,+Alkapuri,+Vadodara,+Gujarat+390005/@22.2947961,73.1217573,13.5z/data=!4m9!4m8!1m1!4e1!1m5!1m1!1s0x395fc5873e594259:0xda3dc91c20f4beec!2m2!1d73.1713566!2d22.3094348" method="get" target="_blank">
+                        <input type="submit" value="Get directions" class="btn_1">
+                    </form>
+                </div>
+             </div>
+            
+            <div class="col-lg-3"style="padding-left:90px;">
+                <div class="box_contact">
+                    <i class="pe-7s-mail-open-file"></i>
+                     <h6 style="font-size:14px;line-height:1.2;color:#333;font-weight:700!important;" >Write To Us</h6>
+                    <a style="color:#444444;"  href="mailto:support@anantsoftcomputing.com">support@anantsoftcomputing.com</a>
+                </div>
+            </div>
+            
+            <div class="col-lg-3"style="padding-left:70px;">
+                <div class="box_contact">
+                    <i class="pe-7s-call"></i>
+                     <h6 style="font-size:14px;line-height:1.2;color:#333;font-weight:700!important;" >Give Us a Call</h6>
+                    <a style="color:#444444;"  href="tel:+91-2652320199">+91 2652320199</a>
+                </div>
+                
+            </div>
+            <div class="col-lg-3" style="padding-left:70px;">
+                <div class="box_contact">
+                    <i class="pe-7s-link"></i>
+                     <h6 style="font-size:14px;line-height:1.2;color:#333;font-weight:700!important;" >Useful Links</h6>
+                   <ul><li><a href="{% url 'index'%}">Home</a> </li><br/>
+                  <li> <a href="{% url 'about'%}">About</a></li><br/> 
+                  <li><a href="{% url 'our-team'%}">Our Team</a></li><br/>
+                  <li><a href="{% url 'portfolio'%}">Portfolio</a></li><br/>
+                <li><a href="{% url 'contact-us' %}">Contact Us</a></li>  </ul>
+                  
+                </div>
+            </div>
+           
+        </div>
+        <div class="row justify-content-center" >
+            <ul >
+               <li>© 2022 ASC. All rights reserved by Anant Soft Computing.</li>
+            </ul>
+        </div>
+    </div>
+ </div>
+</footer>
+  <div class="cd-overlay-nav">
+    <span></span>
+</div>
+<!-- /cd-overlay-nav -->
+
+<div class="cd-overlay-content">
+    <span></span>
+</div>
+<!-- /cd-overlay-content -->
+
+<a href="#0" class="cd-nav-trigger">Menu<span class="cd-icon"></span></a>
+<script src="{% static 'js\jquery-3.5.1.min.js' %}"></script>
+<script src="{% static 'js\common_scripts.min.js' %}"></script></script>
+<script src="{% static 'js\menu.js' %}"></script>
+<script src="{% static 'js\main.js' %}"></script>
+<script src="{% static 'js\wizard_func_multiple_branch.js' %}"></script>	
+
+	
+</body>
+</html>

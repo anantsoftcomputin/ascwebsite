@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+	
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Anant Soft Computing is a leading Software Development (CRM & ERP), Web Development & Best SEO Company in Vadodara (Gujarat, India) which is one of the most happening IT Software hub of India.">
+    <meta name="author" content="Ansonika">
+    <title>Budget| Anant Soft Computing</title>
+    
+    <!-- Favicons-->
+    
+    <link rel="shortcut icon" href="{% static 'img/logoasc.png' %}" type="image/x-icon">
+    <link rel="icon"  href="{% static 'img/logooo.png' %}"type="image/x-icon">
+    <link rel="icon" type="image/x-icon" sizes="72x72" href="{% static 'img/logoasc.png' %}">
+    <link rel="icon" type="image/x-icon" sizes="114x114" href="{% static 'img/logoasc.png' %}">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="{% static 'img/logoasc.png' %}">
+    
+    <!-- GOOGLE WEB FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- BASE CSS -->
+    <link  href="{% static 'css\bootstrap.min.css' %}" rel="stylesheet">
+    <link  href="{% static 'css\style.css' %}" rel="stylesheet">
+    <link  href="{% static 'css\menu.css' %}" rel="stylesheet">
+    <link  href="{% static 'css\vendors.css' %}" rel="stylesheet">
+    <link  href="{% static 'css\icon_fonts/css/all_icons.min.css' %}" rel="stylesheet">
+    <link  href="{% static 'css\skins/square/grey.css' %}" rel="stylesheet">
+    
+     <!-- YOUR CUSTOM CSS -->
+    <link href="{% static 'css\custom.css' %}" rel="stylesheet">
+    <script src="{% static 'js\modernizr.js' %}" rel="stylesheet"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="{% static 'css/form.css' %}">
+    <!-- Modernizr -->
+    
+    
+    </head>
+<body>
+  {% include "header.html"%}
+  <main>
+    <div class="doodle">
+      {%include "doodle.html"%}
+        </div>
+  <div class="container">
+    <div class="step" id="budget" data-state="end">
+        <div class="question_title">
+            <h1>What is your budget?</h1>
+            
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-5" style="padding-bottom: 50px;">
+                <div class="box_general" >
+                  <form  method="POST" >
+                    {% csrf_token %}
+                    <div class="rounded_slider">
+                     <div id="budget_slider" style="margin: 0 auto 20px;" >
+                         
+                     </div>
+                   
+                  <!--  <a  name="backward" class="backward btn btn-primary" style="background-color: #0073e5;" href="{% url 'index' %}">Back</a>-->
+                    <input type=button class="backward btn btn-primary" value="Back" onClick="javascript:history.go(-1);">
+                    
+                     <a href="{% url 'form' %}" style="color:white;"><input type="submit" class="btn btn-primary" value="Forward"></a>
+                     
+                     </div>
+                    </form>
+
+                    
+                </div>
+            </div>
+        </div>
+        <!-- /row -->
+    </div>
+ </div>
+</main>   
+  
+  <div class="cd-overlay-nav">
+    <span></span>
+</div>
+<!-- /cd-overlay-nav -->
+
+<div class="cd-overlay-content">
+    <span></span>
+</div>
+<!-- /cd-overlay-content -->
+
+<a href="#0" class="cd-nav-trigger">Menu<span class="cd-icon"></span></a>
+<script src="{% static 'js\jquery-3.5.1.min.js' %}"></script>
+<script src="{% static 'js\common_scripts.min.js' %}"></script></script>
+<script src="{% static 'js\menu.js' %}"></script>
+<script src="{% static 'js\main.js' %}"></script>
+<script src="{% static 'js\wizard_func_multiple_branch.js' %}"></script>	
+
+	
+</body>
+<footer>
+      {% include "footer.html"%}
+  </footer>
+</html>

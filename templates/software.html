@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+	
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Anant Soft Computing is a leading Software Development (CRM & ERP), Web Development & Best SEO Company in Vadodara (Gujarat, India) which is one of the most happening IT Software hub of India.">
+    <meta name="author" content="Ansonika">
+    <title>Software Development| Anant Soft Computing</title>
+    
+    <!-- Favicons-->
+    
+    <link rel="shortcut icon" href="{% static 'img/logoasc.png' %}" type="image/x-icon">
+    <link rel="icon"  href="{% static 'img/logooo.png' %}"type="image/x-icon">
+    <link rel="icon" type="image/x-icon" sizes="72x72" href="{% static 'img/logoasc.png' %}">
+    <link rel="icon" type="image/x-icon" sizes="114x114" href="{% static 'img/logoasc.png' %}">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="{% static 'img/logoasc.png' %}">
+    
+    <!-- GOOGLE WEB FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- BASE CSS -->
+    <link  href="{% static 'css\bootstrap.min.css' %}" rel="stylesheet">
+    <link  href="{% static 'css\style.css' %}" rel="stylesheet">
+    <link  href="{% static 'css\menu.css' %}" rel="stylesheet">
+    <link  href="{% static 'css\vendors.css' %}" rel="stylesheet">
+    <link  href="{% static 'css\icon_fonts/css/all_icons.min.css' %}" rel="stylesheet">
+    <link  href="{% static 'css\skins/square/grey.css' %}" rel="stylesheet">
+    
+     <!-- YOUR CUSTOM CSS -->
+    <link href="{% static 'css\custom.css' %}" rel="stylesheet">
+    <script src="{% static 'js\modernizr.js' %}" rel="stylesheet"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/form.css' %}">
+    <!-- Modernizr -->
+    
+    
+    </head>
+<body>
+  {% include "header.html"%}
+  <main>
+		<div class="doodle">
+      {%include "doodle.html"%}
+        </div>
+  <div class="container" style="padding-bottom: 30px;">
+    <div class="step" data-state="budget">
+        <div class="question_title">
+            <h1>Software Product Development</h1>
+        </div>
+         <form method="POST" id="form6" >
+          {% csrf_token %}
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="item">
+                    <input id="branch_6_answer_1" type="radio" name="branch_6_answers" group='branch_6_answers' value="software product developement" class="required" onclick="document.getElementById('form6').submit();" >
+                    <label for="branch_6_answer_1"><img src="{% static 'img/seo_icon_2.svg' %}" alt="Mon image" /><strong>Software Product Development</strong>We work on frontline software solutions that enable enterprises to give their digital transformation a competitive edge.</label>
+                </div>
+            </div>
+    
+           <div class="col-lg-8">
+            <div class="item">
+                <p style="padding-top: 20px;">Custom digital experiences are pivotal to today’s dynamic and new-age businesses to build a better future ahead. We, at ASC, leverage 3 decade-long experience in creating customised, and high-performing enterprise software solutions that help enterprises become future-ready.</p>
+                <p>We are designing, developing, measuring, and improving next-gen solutions across a range of industry verticals. ASC's software development team has been successfully delivering impactful digital transformation with optimum efficiency and agility for over 15 years.</p>	
+
+                <p>Our result-driven custom software development services include a multitude of services including Custom CRM, Custom ERP, Enterprise software development, Digital product development, SaaS development, Cloud-enabled development, Software consulting, and Custom software solutions. We utilize modern technologies and advanced approaches like Agile and DevOps to accelerate the time-to-market of your applications with a focus on delivering powerful, scalable, and cutting-edge software solutions.</p>
+            </div>
+           </div>
+        </div>
+        
+      </form>
+      <div>
+       <!-- <button type="submit" name="backward" class="backward" style="margin-left: 80px;margin-top: 20px; background-color: #0073e5;"><a href="{% url 'index' %}" style="color:white;">Backward</a></button></div>-->
+       <a name="backward" class="backward btn btn-primary" style="background-color: #0073e5; margin-left: 90px;" href="/">Back</a>
+    </div>
+</div>
+</main>
+        <!--<form method="POST" id="form6" >
+          {% csrf_token %}
+          <div class="bhavu">
+        <div class="row">
+            <div class="bhavu">
+                <div class="item">
+                    <input id="branch_6_answer_1" type="radio" name="branch_6_answers" group='branch_6_answers' value="software product developement" class="required" onclick="document.getElementById('form6').submit();" >
+                    <label for="branch_6_answer_1"><img src="{% static 'img/seo_icon_2.svg' %}" alt="Mon image" /><strong>Software Product Development</strong>We work on frontline software solutions that enable enterprises to give their digital transformation a competitive edge.</label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+           <div class="col-lg-12">
+            <div class="item">
+                <p style="margin-bottom:10px;">Custom digital experiences are pivotal to today’s dynamic and new-age businesses to build a better future ahead. We, at ASC, leverage 3 decade-long experience in creating customised, and high-performing enterprise software solutions that help enterprises become future-ready.<br/><br/>We are designing, developing, measuring, and improving next-gen solutions across a range of industry verticals. ASC's software development team has been successfully delivering impactful digital transformation with optimum efficiency and agility for over 15 years.<br/><br/>Our result-driven custom software development services include a multitude of services including Custom CRM, Custom ERP, Enterprise software development, Digital product development, SaaS development, Cloud-enabled development, Software consulting, and Custom software solutions. We utilize modern technologies and advanced approaches like Agile and DevOps to accelerate the time-to-market of your applications with a focus on delivering powerful, scalable, and cutting-edge software solutions.</p>
+            </div>
+           </div>
+        </div>
+         <a name="backward" class="backward btn btn-primary" style="background-color: #0073e5; margin-left: 250px;" href="/">Back</a>
+        </div>
+      </form>
+   
+       <!-- <button type="submit" name="backward" class="backward" style="margin-left: 80px;margin-top: 20px; background-color: #0073e5;"><a href="{% url 'index' %}" style="color:white;">Backward</a></button></div>-->
+    
+    
+  <div class="cd-overlay-nav">
+		<span></span>
+	</div>
+	<!-- /cd-overlay-nav -->
+
+	<div class="cd-overlay-content">
+		<span></span>
+	</div>
+	<!-- /cd-overlay-content -->
+
+	<a href="/#0" class="cd-nav-trigger">Menu<span class="cd-icon"></span></a>
+  <script src="{% static 'js\jquery-3.5.1.min.js' %}"></script>
+  <script src="{% static 'js\common_scripts.min.js' %}"></script></script>
+	<script src="{% static 'js\menu.js' %}"></script>
+	<script src="{% static 'js\main.js' %}"></script>
+	<script src="{% static 'js\wizard_func_multiple_branch.js' %}"></script>	
+	
+      
+    </body>
+    <footer>
+		{% include "footer.html"%}
+	</footer>
+    </html>

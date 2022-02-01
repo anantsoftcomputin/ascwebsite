@@ -1,0 +1,57 @@
+{% load static %}
+    <!--<div class="container margin_60_35">-->
+  
+    <div>
+       <div class="row" >
+           <div class="col-lg-3" style="padding-left:70px;">
+              <div class="box_contact">
+                    <i class="pe-7s-map-marker" ></i>
+                   <h6 class="font-weight-bold">Address</h6>
+                    <p>1C Satyam Apartment,
+                    Vishwas Colony, Alkapuri,
+                    Vadodara, Gujarat 390005</p>
+                    <form action="https://www.google.com/maps/dir/22.2794605,73.1469354/Satyam+Apartment,+1C,+Vishwas+Colony,+Alkapuri,+Vadodara,+Gujarat+390005/@22.2947961,73.1217573,13.5z/data=!4m9!4m8!1m1!4e1!1m5!1m1!1s0x395fc5873e594259:0xda3dc91c20f4beec!2m2!1d73.1713566!2d22.3094348" method="get" target="_blank">
+                        <input type="submit" value="Get directions" class="btn_1">
+                    </form>
+                </div>
+             </div>
+            
+            <div class="col-lg-3"style="padding-left:90px;">
+                <div class="box_contact">
+                    <i class="pe-7s-mail-open-file"></i>
+                    <h6 class="font-weight-bold">Write To Us</h6>
+                    <a href="mailto:support@anantsoftcomputing.com">support@anantsoftcomputing.com</a>
+                </div>
+            </div>
+            
+            <div class="col-lg-3"style="padding-left:70px;">
+                <div class="box_contact">
+                    <i class="pe-7s-call"></i>
+                    <h6  class="font-weight-bold">Give Us a Call</h6>
+                    <a href="tel:+91-2652320199">+91 2652320199</a>
+                </div>
+                
+            </div>
+            <div class="col-lg-3" style="padding-left:70px;">
+                <div class="box_contact">
+                    <i class="pe-7s-link"></i>
+                    <h6 class="font-weight-bold">Useful Links</h6>
+                   <ul><li><a href="{% url 'index'%}">Home</a> </li><br/>
+                  <li> <a href="{% url 'about'%}">About</a></li><br/> 
+                  <li><a href="{% url 'our-team'%}">Our Team</a></li><br/>
+                  <li><a href="{% url 'portfolio'%}">Portfolio</a></li><br/>
+                <li><a href="{% url 'contact-us' %}">Contact Us</a></li>  </ul>
+                  
+                </div>
+            </div>
+           
+        </div>
+        <div class="row justify-content-center" >
+            <ul >
+               <li>© 2022 ASC. All rights reserved by Anant Soft Computing.</li>
+            </ul>
+        </div>
+    </div>
+ </div>
+
+<!-- /footer -->

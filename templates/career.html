@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+  <head>
+	
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Apply For Job | ASC">
+    <meta name="author" content="Ansonika">
+    <title>Apply For Job | ASC</title>
+    
+    <!-- Favicons-->
+    
+    <link rel="shortcut icon" href="{% static 'img/logoasc.png' %}" type="image/x-icon">
+    <link rel="icon"  href="{% static 'img/logooo.png' %}"type="image/x-icon">
+    <link rel="icon" type="image/x-icon" sizes="72x72" href="{% static 'img/logoasc.png' %}">
+    <link rel="icon" type="image/x-icon" sizes="114x114" href="{% static 'img/logoasc.png' %}">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="{% static 'img/logoasc.png' %}">
+    
+    <!-- GOOGLE WEB FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- BASE CSS -->
+    <link  href="{% static 'css\bootstrap.min.css' %}" rel="stylesheet">
+    <link  href="{% static 'css\style.css' %}" rel="stylesheet">
+    <link  href="{% static 'css\menu.css' %}" rel="stylesheet">
+    <link  href="{% static 'css\vendors.css' %}" rel="stylesheet">
+    <link  href="{% static 'css\icon_fonts/css/all_icons.min.css' %}" rel="stylesheet">
+    <link  href="{% static 'css\skins/square/grey.css' %}" rel="stylesheet">
+    
+     <!-- YOUR CUSTOM CSS -->
+    <link href="{% static 'css\custom.css' %}" rel="stylesheet">
+    <script src="{% static 'js\modernizr.js' %}" rel="stylesheet"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="{% static 'css/form.css' %}">
+    <!-- Modernizr -->
+    
+    
+    </head>
+<body>
+  {% include "header.html"%}
+  <main>
+    <div class="doodle">
+		{%include "doodle.html"%}
+	    </div>
+	    <div class="question_title">
+	    <h1>Apply Now</h1>
+	    </div>
+  <div class="container" style="margin-bottom:20px;">
+    <div class="submit step" id="end">
+        <div class="table-responsive table-text-middle">
+                       <table class="table table-bordered table-striped">
+                          <thead class="thead-dark">
+                            <tr>
+                              <th>Profile </th>
+                              <th>Position</th>
+                              <th>Experience</th>
+                              <th>Apply</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                                                        <tr>
+                            <td> Digital Marketing[on-site]</td>
+                            <td> 2 </td>
+                            <td> Fresher</td>
+                                                        <td>                            <a href="{% url 'apply-now-form'%}" class="btn btn-read-more btn-sm">Apply Now </a>                                           </td>
+                            </tr>
+                                                        <tr>
+                            <td> PHP Developer(Laravel framwork)[on-site]</td>
+                            <td> 2</td>
+                            <td> 1 year</td>
+                                                        <td>                            <a href="{% url 'apply-now-form'%}" class="btn btn-read-more btn-sm">Apply Now </a>                            </td>
+                            </tr>
+                              <tr>
+                            <td> URGENT: Seo Manager[on-site] </td>
+                            <td> 2 </td>
+                            <td> Fresher </td>
+                                                        <td>                            <a href="{% url 'apply-now-form'%}"class="btn btn-read-more btn-sm">Apply Now </a>                            </td>
+                            </tr>
+                              <tr>
+                            <td>PHP Developer(Codeignitor framwork)[on-site] </td>
+                            <td> 2 </td>
+                            <td> Fresher</td>
+                                                        <td>                            <a href="{% url 'apply-now-form'%}" class="btn btn-read-more btn-sm">Apply Now </a>                            </td>
+                            </tr>
+                             
+                            
+                           <!--  <tr>
+                              <td> Content Writer (Part Time - Freelancer) </td>
+                              <td> 1 </td>
+                              <td> 1 - 3 years </td>
+                              <td><a href="#" class="btn btn-read-more btn-sm">Apply Now </a></td>
+                            </tr> -->
+                          </tbody>
+                        </table>
+         </div>
+        
+         
+ 
+
+</div>
+
+</div>
+<div class="container">
+        <div class="row justify-content-center">
+            <div class="col-sm-8 text-center wow fadeInDown" data-wow-offset="0" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInDown;">
+                <div class="section-heading">
+                    <h2>Also Check</h2>                            
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <hr>
+            </div>
+        </div>
+        <div class="row m-t-30">
+            <div class="col-sm-4 border-right border-bottom wow fadeInUp" data-wow-offset="0" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                <div class="single-link" style="margin-left:70px;">
+                    <a href="{% url 'about'%}">
+                       <img  src="{% static 'img/applynowimages/about_us_apply_now.png'%}" alt="" height="200px" width="200px">
+                        <h3 style="margin-left:70px;">About Us</h3>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-sm-4 border-bottom border-right wow fadeInUp" data-wow-offset="0" data-wow-delay=".6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
+                <div class="single-link"style="margin-left:70px;">
+                    <a href="{% url 'life-at-asc'%}">
+                        <img src="{% static 'img/applynowimages/life_at_asc.png'%}" alt="" height="200px" width="200px">
+                        <h3 style="margin-left:40px;">Life at ASC</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-4  border-bottom wow fadeInUp" data-wow-offset="0" data-wow-delay=".8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInUp;">
+                <div class="single-link"style="margin-left:70px;">
+                    <a href="{% url 'client-testimonial'%}">
+                      <img src="{% static 'img/applynowimages/customer.png'%}" alt="" height="200px" width="200px">
+                        <h3 style="margin-left:40px;">Client testimonials</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-4 border-right wow fadeInUp" data-wow-offset="0" data-wow-delay="1s" style="visibility: visible; animation-delay: 1s; animation-name: fadeInUp;">
+                <div class="single-link"style="margin-left:70px;">
+                    <a href="{% url 'career'%}">
+                       <img src="{% static 'img/applynowimages/career.png'%}" alt="" height="200px" width="200px">
+                        <h3 style="margin-left:70px;">Career</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-4 wow border-right fadeInUp" data-wow-offset="0" data-wow-delay="1.2s" style="visibility: visible; animation-delay: 1.2s; animation-name: fadeInUp;">
+                <div class="single-link" style="margin-left:70px;">
+                    <a href="{% url 'faq'%}">
+                       <img src="{% static 'img/applynowimages/faq.png'%}" alt="" height="200px" width="200px">
+                        <h3 style="margin-left:70px;">Faq</h3></h3>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-4 wow fadeInUp" data-wow-offset="0" data-wow-delay="1.2s" style="visibility: visible; animation-delay: 1.2s; animation-name: fadeInUp;">
+                <div class="single-link" style="margin-left:70px;">
+                    <a href="{% url 'portfolio'%}">
+                       <img src="{% static 'img/applynowimages/gallery.png'%}" alt="" height="200px" width="200px">
+                        <h3 style="margin-left:40px;">Photo Gallery</h3></h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+ <footer>
+      {% include "footer.html"%}
+  </footer>
+  <div class="cd-overlay-nav">
+    <span></span>
+</div>
+<!-- /cd-overlay-nav -->
+
+<div class="cd-overlay-content">
+    <span></span>
+</div>
+<!-- /cd-overlay-content -->
+
+<a href="#0" class="cd-nav-trigger">Menu<span class="cd-icon"></span></a>
+    <script src="{% static 'js\jquery-3.5.1.min.js' %}"></script>
+    <script src="{% static 'js\common_scripts.min.js' %}"></script></script>
+	<script src="{% static 'js\menu.js' %}"></script>
+	<script src="{% static 'js\main.js' %}"></script>
+	<script src="{% static 'js\wizard_func_multiple_branch.js' %}"></script>	
+  
+</body>
+</html>
