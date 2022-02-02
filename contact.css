@@ -1,0 +1,12 @@
+input[type=text], input[type=email], textarea {
+ width: 100%;
+padding: 12px 20px;
+ display: flow-root;
+ margin:-10px 0;
+
+}
+input[type=submit]{
+width:50%;
+align:center;
+ margin-left:60px;
+}
